@@ -60,18 +60,6 @@ const pintarCarrito = () => {
   pintarFooter();
 };
 
-const pintarFooter = () => {
-  console.log("pintar footer");
-  footer.textContent = "";
-  const total = carritoObjeto.reduce(
-    (acc, current) => acc + current.cantidad * current.precio,
-    0
-  );
-  const clone = templateFooter.content.cloneNode(true);
-  clone.querySelector("span").textContent = total;
-  footer.appendChild(clone);
-};
-
 const btnAumentar = (e) => {
   console.log("me diste click", e.target.dataset.id);
   carritoObjeto = carritoObjeto.map((item) => {
@@ -91,7 +79,6 @@ const btnDisminuir = (e) => {
         item.cantidad--;
       }
     }
-    return item;
   });
   pintarCarrito();
 };
