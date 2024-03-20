@@ -39,7 +39,6 @@ const agregarCarrito = (e) => {
   console.log(carritoObjeto);
 
   pintarCarrito();
-  pintarFooter();
 };
 
 const pintarCarrito = () => {
@@ -57,7 +56,6 @@ const pintarCarrito = () => {
     fragment.appendChild(clone);
   });
   carrito.appendChild(fragment);
-  pintarFooter();
 };
 
 const btnAumentar = (e) => {
