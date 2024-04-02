@@ -19,7 +19,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Fresas 🍓</h5>
-              <p class="lead text-align-center">$300</p>
+              <p class="lead text-align-center">$300.00</p>
               <button
                 class="btn pt-0 pb-0 pl-1 pr-1 w-25 btn-primary"
                 style="min-width: fit-content"
@@ -35,7 +35,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Banana 🍌</h5>
-              <p class="lead">$100</p>
+              <p class="lead">$100.00</p>
               <button
                 class="btn pt-0 pb-0 pl-1 pr-1 w-25 btn-primary"
                 style="min-width: fit-content"
@@ -51,7 +51,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Manzana 🍏</h5>
-              <p class="lead">$200</p>
+              <p class="lead">$200.00</p>
               <button
                 class="btn pt-0 pb-0 pl-1 pr-1 w-25 btn-primary"
                 style="min-width: fit-content"
@@ -75,6 +75,25 @@
       </ul>
     </section>
 
+    <footer id="Footer" class="container mt-3">
+      <template id="templateFooter">
+        <div class="card">
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <p class="lead mb-0">TOTAL: <span>1500</span></p>
+            <button
+              class="btn pt-0 pb-0 pl-1 pr-1 w-25 btn-warning"
+              style="min-width: fit-content"
+              id="finalizarCompra"
+            >
+              Finalizar Compra
+            </button>
+          </div>
+        </div>
+      </template>
+    </footer>
+
     <template id="template">
       <li
         class="list-group-item d-flex justify-content-between align-items-center"
@@ -86,7 +105,7 @@
         class="list-group-item d-flex justify-content-between align-items-center"
       >
         <div>
-          <p class="lead mb-0">Total: $<span>300</span></p>
+          <p class="lead mb-0">Total: <span>300</span></p>
         </div>
         <div>
           <button class="btn btn-sm btn-danger">Quitar</button>
@@ -95,19 +114,7 @@
       </li>
     </template>
 
-    <footer class="container mt-3">
-      <template class="templateFooter">
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <p class="lead mb-0">Total: $<span>1500</span></p>
-            <button class="btn btn-outline-primary">Finalizar compra</button>
-          </div>
-        </div>
-      </template>
-    </footer>
-
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
